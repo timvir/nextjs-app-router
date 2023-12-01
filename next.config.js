@@ -1,6 +1,8 @@
 import { remarkPlugin } from "@timvir/mdx";
 
 export default {
+  basePath: "/docs",
+
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 
   webpack(config, options) {
