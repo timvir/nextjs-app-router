@@ -18,6 +18,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {
           label: "Components",
           path: "/docs/components",
+          children: [
+            {
+              label: "Foo",
+              path: "/docs/components/Foo",
+            },
+            {
+              label: "Bar",
+              path: "/docs/components/Bar",
+            },
+            {
+              label: "Baz",
+              path: "/docs/components/Baz",
+            },
+          ]
         },
       ]}
       location={{ asPath, push() {} }}
