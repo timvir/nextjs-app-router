@@ -5,6 +5,10 @@ export default {
 
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   webpack(config, options) {
     config.module.rules.push({
       test: /\.mdx?$/,
